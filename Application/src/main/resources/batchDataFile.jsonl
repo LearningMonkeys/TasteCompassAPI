@@ -1,0 +1,2 @@
+{"custom_id": "request-1", "method": "POST", "url": "/v1/embeddings/completions", "body": {"model": "text-embedding-3-small", "input": "request1"}}
+{"custom_id": "request-2", "method": "POST", "url": "/v1/embeddings/completions", "body": {"model": "text-embedding-3-small", "input": "request2"}}
