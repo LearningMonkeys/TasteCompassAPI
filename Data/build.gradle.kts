@@ -16,6 +16,11 @@ dependencies {
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactive:1.8.0")
+
+    implementation("io.milvus:milvus-sdk-java:2.4.4")
+    implementation("com.google.code.gson:gson:2.10.1")
+
+    implementation(project(":BaseUtil"))
 }
 
 tasks.test {

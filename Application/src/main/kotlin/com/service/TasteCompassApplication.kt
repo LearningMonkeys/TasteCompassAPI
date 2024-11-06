@@ -3,7 +3,7 @@ package com.service
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
-@SpringBootApplication
+@SpringBootApplication()
 class TasteCompassApplication
 
 fun main(args: Array<String>) {
