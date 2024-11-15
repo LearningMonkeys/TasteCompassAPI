@@ -1,14 +1,16 @@
 package com.service
 
+import com.entity.Restaurant
 import kotlinx.coroutines.*
 import org.springframework.stereotype.Service
 import java.util.logging.Logger
 
 @Service
 class MainController(
-    private val sampleProcessor: SampleProcessor
+    private val dataStorageService: DataStorageService<Restaurant>
 ) : Controller{
     private var processScope = CoroutineScope(Job() + Dispatchers.Default)
+    private val sampleProcessor = SampleProcessor(dataStorageService)
 
     override fun start() {
         if(!processScope.isActive) {
